@@ -1,0 +1,49 @@
+name: research-stand
+
+services:
+  sut:
+    build: ./sut
+    image: research-stand/sut:1.0.0
+    ports:
+      - "8080:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1/"]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1g
+
+  runner:
+    build: ./runner
+    image: research-stand/runner:1.0.0
+    profiles: ["run"]
+    depends_on:
+      sut:
+        condition: service_healthy
+    working_dir: /workspace
+    environment:
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./:/workspace
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
+
+  analysis:
+    build: ./analysis
+    image: research-stand/analysis:1.0.0
+    profiles: ["analysis"]
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g

@@ -1,0 +1,56 @@
+{
+  "run_id": "K-none_fast_no_sw_cold-r01",
+  "started_at": "2026-11-19T14:42:41+00:00",
+  "finished_at": "2026-11-19T14:42:50+00:00",
+  "spec": {
+    "run_id": "K-none_fast_no_sw_cold-r01",
+    "block": "K",
+    "rep": 1,
+    "render": "none",
+    "objects": 0,
+    "seed": 100,
+    "transport": "fast",
+    "mode": "no_sw_cold",
+    "warmup_ms": 2000,
+    "measure_ms": 6000,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "browser_args": null,
+    "results_dir": "results/raw",
+    "git_commit": "no-git",
+    "config_sha256": "4df5ae9a20ec87fc913ca3492af81de04f948a4d1acb78ee29b40728788744e1"
+  },
+  "url": "http://127.0.0.1:8080/?render=none&objects=0&seed=100&sw=0",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "python": "3.14.2",
+    "cpu_count": 12
+  },
+  "browser": {
+    "name": "chromium",
+    "version": "153.0.8010.12",
+    "args": [
+      "--enable-unsafe-swiftshader",
+      "--use-angle=d3d11",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--force-device-scale-factor=1"
+    ]
+  },
+  "network_profile": {
+    "latency_ms": 0,
+    "download_kbps": 0,
+    "upload_kbps": 0,
+    "cpu_slowdown": 1
+  },
+  "raw_files": {
+    "metrics": "K-none_fast_no_sw_cold-r01.metrics.json",
+    "frames": "K-none_fast_no_sw_cold-r01.frames.csv"
+  },
+  "config_sha256": "4df5ae9a20ec87fc913ca3492af81de04f948a4d1acb78ee29b40728788744e1",
+  "git_commit": "no-git"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "WebGL PWA Lab",
+  "short_name": "WebGL Lab",
+  "description": "Экспериментальный стенд: WebGL-рендеринг в PWA при ограниченной сети",
+  "start_url": "/?render=baseline",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

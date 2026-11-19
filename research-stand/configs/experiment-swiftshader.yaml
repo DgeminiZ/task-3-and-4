@@ -1,0 +1,43 @@
+name: webgl-pwa-control-swiftshader
+seed: 20261119
+
+# Контрольный прогон на программном растеризаторе.
+# Нужен, чтобы показать: абсолютные значения FPS и величина эффекта instancing
+# зависят от графического backend, а направление эффекта LOD сохраняется.
+objects: 4000
+warmup_ms: 2000
+measure_ms: 6000
+repetitions: 5
+randomize_order: true
+results_dir: results/raw-swiftshader
+
+browser:
+  backend: swiftshader
+  args:
+    - "--enable-unsafe-swiftshader"
+    - "--use-gl=angle"
+    - "--use-angle=swiftshader"
+    - "--disable-gpu-vsync"
+    - "--disable-background-timer-throttling"
+    - "--disable-renderer-backgrounding"
+
+viewport:
+  width: 1280
+  height: 720
+
+blocks:
+  - id: A
+    name: rendering
+    factors:
+      render: [baseline, instanced, lod]
+      transport: [fast]
+      mode: [no_sw_cold]
+    repetitions: 5
+
+  - id: B
+    name: pwa
+    factors:
+      render: [baseline]
+      transport: [slow3g]
+      mode: [no_sw_cold, sw_warm]
+    repetitions: 5

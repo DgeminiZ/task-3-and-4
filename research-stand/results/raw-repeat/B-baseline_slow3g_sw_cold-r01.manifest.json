@@ -1,0 +1,61 @@
+{
+  "run_id": "B-baseline_slow3g_sw_cold-r01",
+  "started_at": "2026-11-19T15:13:14+00:00",
+  "finished_at": "2026-11-19T15:13:53+00:00",
+  "spec": {
+    "run_id": "B-baseline_slow3g_sw_cold-r01",
+    "block": "B",
+    "rep": 1,
+    "render": "baseline",
+    "objects": 35000,
+    "seed": 778,
+    "transport": "slow3g",
+    "mode": "sw_cold",
+    "warmup_ms": 2000,
+    "measure_ms": 6000,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "browser_args": [
+      "--enable-unsafe-swiftshader",
+      "--use-angle=d3d11",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ],
+    "results_dir": "results/raw-repeat",
+    "git_commit": "no-git",
+    "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071"
+  },
+  "url": "http://127.0.0.1:8080/?render=baseline&objects=35000&seed=778&sw=1",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "python": "3.14.2",
+    "cpu_count": 12
+  },
+  "browser": {
+    "name": "chromium",
+    "version": "153.0.8010.12",
+    "args": [
+      "--enable-unsafe-swiftshader",
+      "--use-angle=d3d11",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ]
+  },
+  "network_profile": {
+    "latency_ms": 300,
+    "download_kbps": 1600,
+    "upload_kbps": 750,
+    "cpu_slowdown": 4
+  },
+  "raw_files": {
+    "metrics": "B-baseline_slow3g_sw_cold-r01.metrics.json",
+    "frames": "B-baseline_slow3g_sw_cold-r01.frames.csv"
+  },
+  "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071",
+  "git_commit": "no-git"
+}

@@ -1,0 +1,25 @@
+name: webgl-pwa-calibration
+seed: 99
+
+objects: 0
+warmup_ms: 2000
+measure_ms: 6000
+repetitions: 5
+randomize_order: false
+
+viewport:
+  width: 1280
+  height: 720
+
+blocks:
+  - id: K
+    name: generator-capacity
+    description: >
+      Пустая сцена (render=none) проверяет верхнюю границу стенда: если
+      браузер не держит целевые 60 FPS на пустой сцене, измерительный
+      контур сам является узким местом.
+    factors:
+      render: [none]
+      transport: [fast]
+      mode: [no_sw_cold]
+    repetitions: 5

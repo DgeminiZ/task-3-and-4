@@ -1,0 +1,3 @@
+mode,runs,successes,success_rate,wilson_low,wilson_high
+offline_sw,10,10,1.0,0.7224598312333834,1.0
+offline_control,10,0,0.0,0.0,0.2775401687666166

@@ -1,0 +1,63 @@
+{
+  "run_id": "B-baseline_slow3g_no_sw_cold-r04",
+  "started_at": "2026-11-19T14:51:24+00:00",
+  "finished_at": "2026-11-19T14:51:54+00:00",
+  "spec": {
+    "run_id": "B-baseline_slow3g_no_sw_cold-r04",
+    "block": "B",
+    "rep": 4,
+    "render": "baseline",
+    "objects": 4000,
+    "seed": 20261123,
+    "transport": "slow3g",
+    "mode": "no_sw_cold",
+    "warmup_ms": 2000,
+    "measure_ms": 6000,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "browser_args": [
+      "--enable-unsafe-swiftshader",
+      "--use-gl=angle",
+      "--use-angle=swiftshader",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ],
+    "results_dir": "results/raw-swiftshader",
+    "git_commit": "no-git",
+    "config_sha256": "a9aa95b9c72dad3a4ca6e86e8cbc01097190bf56c52eb07fe7c141901b1cdc50"
+  },
+  "url": "http://127.0.0.1:8080/?render=baseline&objects=4000&seed=20261123&sw=0",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "python": "3.14.2",
+    "cpu_count": 12
+  },
+  "browser": {
+    "name": "chromium",
+    "version": "153.0.8010.12",
+    "args": [
+      "--enable-unsafe-swiftshader",
+      "--use-gl=angle",
+      "--use-angle=swiftshader",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ]
+  },
+  "network_profile": {
+    "latency_ms": 300,
+    "download_kbps": 1600,
+    "upload_kbps": 750,
+    "cpu_slowdown": 4
+  },
+  "raw_files": {
+    "metrics": "B-baseline_slow3g_no_sw_cold-r04.metrics.json",
+    "frames": "B-baseline_slow3g_no_sw_cold-r04.frames.csv"
+  },
+  "config_sha256": "a9aa95b9c72dad3a4ca6e86e8cbc01097190bf56c52eb07fe7c141901b1cdc50",
+  "git_commit": "no-git"
+}

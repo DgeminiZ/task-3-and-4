@@ -1,0 +1,28 @@
+{
+  "run_id": "A-baseline_fast_no_sw_cold-r02",
+  "block": "A",
+  "rep": 2,
+  "base_url": "http://127.0.0.1:8080",
+  "render": "baseline",
+  "objects": 4000,
+  "seed": 20261121,
+  "transport": "fast",
+  "mode": "no_sw_cold",
+  "warmup_ms": 2000,
+  "measure_ms": 6000,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "browser_args": [
+    "--enable-unsafe-swiftshader",
+    "--use-gl=angle",
+    "--use-angle=swiftshader",
+    "--disable-gpu-vsync",
+    "--disable-background-timer-throttling",
+    "--disable-renderer-backgrounding"
+  ],
+  "results_dir": "results/raw-swiftshader",
+  "git_commit": "no-git",
+  "config_sha256": "a9aa95b9c72dad3a4ca6e86e8cbc01097190bf56c52eb07fe7c141901b1cdc50"
+}

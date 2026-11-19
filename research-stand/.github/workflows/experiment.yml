@@ -1,0 +1,38 @@
+name: experiment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  smoke-and-short-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install PyYAML==6.0.2
+
+      - run: docker compose build sut
+
+      - run: docker compose up -d sut
+
+      - run: python runner/run_experiment.py --mode docker --config configs/ci.yaml
+
+      - run: docker compose --profile analysis run --rm analysis python analysis/analyze.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: experiment-results
+          path: |
+            results/processed
+            results/figures
+            results/raw/_campaign.json
+
+      - run: docker compose --profile run --profile analysis down -v
+        if: always()

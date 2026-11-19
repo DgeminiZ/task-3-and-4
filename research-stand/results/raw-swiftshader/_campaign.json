@@ -1,0 +1,220 @@
+{
+  "name": "webgl-pwa-control-swiftshader",
+  "seed": 20261119,
+  "mode": "local",
+  "started_at": "2026-11-19T14:44:30+00:00",
+  "git_commit": "no-git",
+  "git_dirty": true,
+  "config": "configs\\experiment-swiftshader.yaml",
+  "config_sha256": "a9aa95b9c72dad3a4ca6e86e8cbc01097190bf56c52eb07fe7c141901b1cdc50",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "cpu_count": 12,
+    "python": "3.14.2"
+  },
+  "plan": [
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-instanced_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-instanced_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_slow3g_sw_warm-r04"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-lod_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_slow3g_sw_warm-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-baseline_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r03"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-lod_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-baseline_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_slow3g_sw_warm-r03"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-lod_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_slow3g_sw_warm-r01"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-instanced_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-baseline_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-baseline_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-lod_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-lod_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-instanced_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-baseline_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-instanced_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_slow3g_sw_warm-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r00"
+    }
+  ],
+  "plan_size": 25
+}

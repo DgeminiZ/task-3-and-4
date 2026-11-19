@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebGL PWA Lab — SUT</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <h1>WebGL PWA Lab</h1>
+      <div class="status">
+        <span id="net" class="badge">online</span>
+        <span id="sw" class="badge">sw: off</span>
+        <span id="hud" class="badge">fps: —</span>
+      </div>
+    </header>
+    <main>
+      <canvas id="scene" width="960" height="540"></canvas>
+      <section class="panel">
+        <button id="probe" type="button">interaction probe</button>
+        <p class="hint">
+          SUT стенда: PWA с WebGL-сценой. Параметры прогона передаются в query string
+          (<code>render</code>, <code>objects</code>, <code>seed</code>, <code>sw</code>).
+        </p>
+      </section>
+    </main>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

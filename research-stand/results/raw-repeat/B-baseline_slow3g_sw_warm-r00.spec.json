@@ -1,0 +1,27 @@
+{
+  "run_id": "B-baseline_slow3g_sw_warm-r00",
+  "block": "B",
+  "rep": 0,
+  "base_url": "http://127.0.0.1:8080",
+  "render": "baseline",
+  "objects": 35000,
+  "seed": 777,
+  "transport": "slow3g",
+  "mode": "sw_warm",
+  "warmup_ms": 2000,
+  "measure_ms": 6000,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "browser_args": [
+    "--enable-unsafe-swiftshader",
+    "--use-angle=d3d11",
+    "--disable-gpu-vsync",
+    "--disable-background-timer-throttling",
+    "--disable-renderer-backgrounding"
+  ],
+  "results_dir": "results/raw-repeat",
+  "git_commit": "no-git",
+  "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071"
+}

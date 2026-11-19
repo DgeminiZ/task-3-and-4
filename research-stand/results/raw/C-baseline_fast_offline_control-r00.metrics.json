@@ -1,0 +1,10 @@
+{
+  "valid": false,
+  "offline_ok": false,
+  "error": "offline navigation failed",
+  "sw": {},
+  "main_thread_busy_pct": 0.36,
+  "console_errors": [],
+  "duration_s": 1.26,
+  "run_id": "C-baseline_fast_offline_control-r00"
+}

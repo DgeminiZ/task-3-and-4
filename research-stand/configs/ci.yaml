@@ -1,0 +1,37 @@
+name: webgl-pwa-ci
+seed: 7
+
+objects: 400
+warmup_ms: 1000
+measure_ms: 3000
+repetitions: 2
+randomize_order: true
+
+viewport:
+  width: 1280
+  height: 720
+
+blocks:
+  - id: A
+    name: rendering
+    factors:
+      render: [baseline, instanced, lod]
+      transport: [fast]
+      mode: [no_sw_cold]
+    repetitions: 2
+
+  - id: B
+    name: pwa
+    factors:
+      render: [baseline]
+      transport: [slow3g]
+      mode: [no_sw_cold, sw_warm]
+    repetitions: 2
+
+  - id: C
+    name: offline
+    factors:
+      render: [baseline]
+      transport: [fast]
+      mode: [offline_sw, offline_control]
+    repetitions: 2

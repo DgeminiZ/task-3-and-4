@@ -1,0 +1,20 @@
+{
+  "runs_total": 45,
+  "runs_valid": 45,
+  "valid_share": 1.0,
+  "main_thread_busy_median_pct": 93.7,
+  "main_thread_busy_max_pct": 99.64,
+  "main_thread_busy_over_80_share": 0.7777777777777778,
+  "renderers": [
+    "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A721) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  ],
+  "draw_calls": {
+    "baseline": 35000,
+    "instanced": 1,
+    "lod": 35000
+  },
+  "aa": {
+    "available": false,
+    "n": 5
+  }
+}

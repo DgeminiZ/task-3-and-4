@@ -1,0 +1,20 @@
+{
+  "runs_total": 25,
+  "runs_valid": 25,
+  "valid_share": 1.0,
+  "main_thread_busy_median_pct": 78.67,
+  "main_thread_busy_max_pct": 99.35,
+  "main_thread_busy_over_80_share": 0.44,
+  "renderers": [
+    "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  ],
+  "draw_calls": {
+    "baseline": 4000,
+    "instanced": 1,
+    "lod": 4000
+  },
+  "aa": {
+    "available": false,
+    "n": 5
+  }
+}

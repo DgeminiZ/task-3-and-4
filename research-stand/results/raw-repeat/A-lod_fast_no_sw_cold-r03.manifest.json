@@ -1,0 +1,61 @@
+{
+  "run_id": "A-lod_fast_no_sw_cold-r03",
+  "started_at": "2026-11-19T15:01:00+00:00",
+  "finished_at": "2026-11-19T15:01:15+00:00",
+  "spec": {
+    "run_id": "A-lod_fast_no_sw_cold-r03",
+    "block": "A",
+    "rep": 3,
+    "render": "lod",
+    "objects": 35000,
+    "seed": 780,
+    "transport": "fast",
+    "mode": "no_sw_cold",
+    "warmup_ms": 2000,
+    "measure_ms": 6000,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "browser_args": [
+      "--enable-unsafe-swiftshader",
+      "--use-angle=d3d11",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ],
+    "results_dir": "results/raw-repeat",
+    "git_commit": "no-git",
+    "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071"
+  },
+  "url": "http://127.0.0.1:8080/?render=lod&objects=35000&seed=780&sw=0",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "python": "3.14.2",
+    "cpu_count": 12
+  },
+  "browser": {
+    "name": "chromium",
+    "version": "153.0.8010.12",
+    "args": [
+      "--enable-unsafe-swiftshader",
+      "--use-angle=d3d11",
+      "--disable-gpu-vsync",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ]
+  },
+  "network_profile": {
+    "latency_ms": 0,
+    "download_kbps": 0,
+    "upload_kbps": 0,
+    "cpu_slowdown": 1
+  },
+  "raw_files": {
+    "metrics": "A-lod_fast_no_sw_cold-r03.metrics.json",
+    "frames": "A-lod_fast_no_sw_cold-r03.frames.csv"
+  },
+  "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071",
+  "git_commit": "no-git"
+}

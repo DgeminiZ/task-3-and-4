@@ -1,0 +1,64 @@
+name: webgl-pwa-repeat
+seed: 777
+objects: 35000
+warmup_ms: 2000
+measure_ms: 6000
+repetitions: 5
+randomize_order: true
+results_dir: results/raw-repeat
+browser:
+  backend: d3d11
+  args:
+  - --enable-unsafe-swiftshader
+  - --use-angle=d3d11
+  - --disable-gpu-vsync
+  - --disable-background-timer-throttling
+  - --disable-renderer-backgrounding
+viewport:
+  width: 1280
+  height: 720
+network_profiles:
+  fast:
+    latency_ms: 0
+    download_kbps: 0
+    upload_kbps: 0
+    cpu_slowdown: 1
+  slow3g:
+    latency_ms: 300
+    download_kbps: 1600
+    upload_kbps: 750
+    cpu_slowdown: 4
+blocks:
+- id: A
+  name: rendering
+  description: 'RQ1. Влияние метода рендеринга на частоту кадров при прочих равных.
+    Дробный план: transport=fast, mode=no_sw_cold фиксированы.
+
+    '
+  factors:
+    render:
+    - baseline
+    - instanced
+    - lod
+    transport:
+    - fast
+    mode:
+    - no_sw_cold
+  repetitions: 5
+- id: B
+  name: pwa
+  description: 'RQ2. Влияние service worker и повторного визита на метрики загрузки
+    в быстрой и ограниченной сети. render=baseline фиксирован.
+
+    '
+  factors:
+    render:
+    - baseline
+    transport:
+    - fast
+    - slow3g
+    mode:
+    - no_sw_cold
+    - sw_cold
+    - sw_warm
+  repetitions: 5

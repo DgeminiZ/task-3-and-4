@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+results/raw/*.spec.json
+.DS_Store

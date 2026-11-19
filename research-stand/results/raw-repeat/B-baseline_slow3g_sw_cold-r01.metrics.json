@@ -1,0 +1,50 @@
+{
+  "frames": 6,
+  "window_ms": 7942.2,
+  "fps_mean": 0.93,
+  "frame_mean_ms": 1074.95,
+  "frame_p50_ms": 950,
+  "frame_p95_ms": 1583.3,
+  "frame_p99_ms": 1583.3,
+  "frame_max_ms": 1583.3,
+  "jank_pct": 100,
+  "lcp_ms": 860,
+  "cls": 0.0001,
+  "fcp_ms": 860,
+  "first_frame_ms": 5267.9,
+  "long_tasks": 18,
+  "long_task_ms": 21520,
+  "ttfb_ms": 3.6,
+  "dom_content_loaded_ms": 7206.8,
+  "load_ms": 7207,
+  "transfer_bytes": 709350,
+  "info": {
+    "render": "baseline",
+    "objects": 35000,
+    "draw_calls": 35000,
+    "triangles": 6300000,
+    "gpu": {
+      "vendor": "Google Inc. (Intel)",
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A721) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "sw_controlled": true,
+    "nav_type": "navigate",
+    "resource_count": 6,
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+    "hardware_concurrency": 12,
+    "device_memory_gb": 16
+  },
+  "offline_ok": null,
+  "sw": {
+    "supported": true,
+    "cacheEntries": 10,
+    "cacheName": "webgl-pwa-lab-v1"
+  },
+  "interaction_proxy_ms": null,
+  "main_thread_busy_pct": 87.3,
+  "valid": true,
+  "console_errors": [],
+  "duration_s": 38.96,
+  "run_id": "B-baseline_slow3g_sw_cold-r01"
+}

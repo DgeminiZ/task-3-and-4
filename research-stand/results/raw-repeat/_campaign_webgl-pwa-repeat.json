@@ -1,0 +1,380 @@
+{
+  "name": "webgl-pwa-repeat",
+  "seed": 777,
+  "mode": "local",
+  "started_at": "2026-11-19T14:57:19+00:00",
+  "git_commit": "no-git",
+  "git_dirty": true,
+  "config": "configs\\repeat.yaml",
+  "config_sha256": "95571b3b36c5169c325b915269e2b546fb825b913415cec3a0848968cd018071",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "cpu_count": 12,
+    "python": "3.14.2"
+  },
+  "plan": [
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_slow3g_sw_warm-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-baseline_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_slow3g_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_slow3g_sw_cold-r03"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-lod_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-baseline_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-lod_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-instanced_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_slow3g_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-lod_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_fast_sw_warm-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_fast_sw_warm-r00"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 1,
+      "run_id": "A-instanced_fast_no_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_fast_sw_warm-r01"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-instanced_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r00"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-instanced_fast_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_fast_sw_warm-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_fast_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-baseline_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_slow3g_sw_warm-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 3,
+      "run_id": "A-baseline_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 0,
+      "run_id": "A-lod_fast_no_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_slow3g_sw_cold-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 0,
+      "run_id": "B-baseline_slow3g_sw_warm-r00"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_fast_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r02"
+    },
+    {
+      "render": "instanced",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-instanced_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_fast_no_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_fast_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_slow3g_sw_warm-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 2,
+      "run_id": "A-baseline_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 4,
+      "run_id": "B-baseline_slow3g_no_sw_cold-r04"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_fast_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "B",
+      "rep": 2,
+      "run_id": "B-baseline_fast_no_sw_cold-r02"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 1,
+      "run_id": "B-baseline_slow3g_sw_cold-r01"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_cold",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_fast_sw_cold-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "slow3g",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_slow3g_sw_warm-r03"
+    },
+    {
+      "render": "baseline",
+      "transport": "fast",
+      "mode": "sw_warm",
+      "block": "B",
+      "rep": 3,
+      "run_id": "B-baseline_fast_sw_warm-r03"
+    },
+    {
+      "render": "lod",
+      "transport": "fast",
+      "mode": "no_sw_cold",
+      "block": "A",
+      "rep": 4,
+      "run_id": "A-lod_fast_no_sw_cold-r04"
+    }
+  ],
+  "plan_size": 45
+}
